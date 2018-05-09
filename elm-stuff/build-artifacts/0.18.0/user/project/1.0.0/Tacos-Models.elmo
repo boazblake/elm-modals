@@ -1,0 +1,9 @@
+var _user$project$Tacos_Models$model = {modal: _elm_lang$core$Maybe$Nothing, totalOrdered: 0};
+var _user$project$Tacos_Models$modal = {currentOrder: 0};
+var _user$project$Tacos_Models$Modal = function (a) {
+	return {currentOrder: a};
+};
+var _user$project$Tacos_Models$Model = F2(
+	function (a, b) {
+		return {modal: a, totalOrdered: b};
+	});

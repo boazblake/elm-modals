@@ -1,0 +1,5 @@
+var _user$project$Ports$focusModule = _elm_lang$core$Native_Platform.outgoingPort(
+	'focusModule',
+	function (v) {
+		return null;
+	});

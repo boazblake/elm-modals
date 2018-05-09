@@ -1,0 +1,4 @@
+var _user$project$DestroyWorld_Messages$CancelDestroyWorld = {ctor: 'CancelDestroyWorld'};
+var _user$project$DestroyWorld_Messages$DestroyWorld = {ctor: 'DestroyWorld'};
+var _user$project$DestroyWorld_Messages$ToDestroyWorld = {ctor: 'ToDestroyWorld'};
+var _user$project$DestroyWorld_Messages$NoOp = {ctor: 'NoOp'};

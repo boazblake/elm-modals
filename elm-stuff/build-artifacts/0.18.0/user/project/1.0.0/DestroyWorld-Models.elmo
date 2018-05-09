@@ -1,0 +1,9 @@
+var _user$project$DestroyWorld_Models$model = {modal: _elm_lang$core$Maybe$Nothing, isWorldDestroyed: false};
+var _user$project$DestroyWorld_Models$modal = {destroyWorld: false};
+var _user$project$DestroyWorld_Models$Modal = function (a) {
+	return {destroyWorld: a};
+};
+var _user$project$DestroyWorld_Models$Model = F2(
+	function (a, b) {
+		return {modal: a, isWorldDestroyed: b};
+	});

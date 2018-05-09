@@ -1,0 +1,46 @@
+var _user$project$DestroyCountries_Update$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		switch (_p0.ctor) {
+			case 'NoOp':
+				return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+			case 'StartSelectingCountries':
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{
+						modal: _elm_lang$core$Maybe$Just(_user$project$DestroyCountries_Models$modal)
+					});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+			case 'SelectCounty':
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{
+						selectedCountries: {ctor: '::', _0: _p0._0, _1: model.selectedCountries}
+					});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+			case 'DestroyCountries':
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{
+						selectedCountries: {
+							ctor: '::',
+							_0: '',
+							_1: {ctor: '[]'}
+						},
+						modal: _elm_lang$core$Maybe$Nothing
+					});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+			default:
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{
+						selectedCountries: {
+							ctor: '::',
+							_0: '',
+							_1: {ctor: '[]'}
+						},
+						modal: _elm_lang$core$Maybe$Nothing
+					});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+		}
+	});

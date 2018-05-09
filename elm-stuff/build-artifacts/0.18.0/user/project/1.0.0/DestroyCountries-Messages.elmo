@@ -1,0 +1,7 @@
+var _user$project$DestroyCountries_Messages$CancelDestruction = {ctor: 'CancelDestruction'};
+var _user$project$DestroyCountries_Messages$DestroyCountries = {ctor: 'DestroyCountries'};
+var _user$project$DestroyCountries_Messages$SelectCounty = function (a) {
+	return {ctor: 'SelectCounty', _0: a};
+};
+var _user$project$DestroyCountries_Messages$StartSelectingCountries = {ctor: 'StartSelectingCountries'};
+var _user$project$DestroyCountries_Messages$NoOp = {ctor: 'NoOp'};

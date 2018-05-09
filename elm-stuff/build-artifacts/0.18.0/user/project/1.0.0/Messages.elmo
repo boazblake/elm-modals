@@ -1,0 +1,11 @@
+var _user$project$Messages$UpdateDestroyWorld = function (a) {
+	return {ctor: 'UpdateDestroyWorld', _0: a};
+};
+var _user$project$Messages$UpdateDestroyCountry = function (a) {
+	return {ctor: 'UpdateDestroyCountry', _0: a};
+};
+var _user$project$Messages$UpdateTacos = function (a) {
+	return {ctor: 'UpdateTacos', _0: a};
+};
+var _user$project$Messages$ResetModalFocus = {ctor: 'ResetModalFocus'};
+var _user$project$Messages$NoOp = {ctor: 'NoOp'};

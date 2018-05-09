@@ -1,0 +1,49 @@
+var _user$project$View$view = function (model) {
+	var _p0 = model.isWorldDestroyed;
+	if (_p0 === false) {
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _user$project$Styles_Main$mainContentStyle,
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: _user$project$Views_Header$view(model),
+				_1: {
+					ctor: '::',
+					_0: _user$project$Views_Main$view(model),
+					_1: {
+						ctor: '::',
+						_0: _user$project$Views_Modal$view(model),
+						_1: {ctor: '[]'}
+					}
+				}
+			});
+	} else {
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _user$project$Styles_Main$deathScreenStyle,
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$h2,
+					{
+						ctor: '::',
+						_0: _user$project$Styles_Main$deathHeaderStyle,
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text('The world has been destroyed. Have a nice day :)'),
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			});
+	}
+};

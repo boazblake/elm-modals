@@ -1,0 +1,16 @@
+var _user$project$DestroyCountries_Models$model = {
+	modal: _elm_lang$core$Maybe$Nothing,
+	selectedCountries: {
+		ctor: '::',
+		_0: '',
+		_1: {ctor: '[]'}
+	}
+};
+var _user$project$DestroyCountries_Models$modal = {countryToDestroy: ''};
+var _user$project$DestroyCountries_Models$Modal = function (a) {
+	return {countryToDestroy: a};
+};
+var _user$project$DestroyCountries_Models$Model = F2(
+	function (a, b) {
+		return {modal: a, selectedCountries: b};
+	});

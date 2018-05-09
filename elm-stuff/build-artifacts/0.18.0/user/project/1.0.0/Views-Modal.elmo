@@ -1,0 +1,91 @@
+var _user$project$Views_Modal$modalContent = function (wrappedModal) {
+	var _p0 = wrappedModal;
+	switch (_p0.ctor) {
+		case 'TacoModal':
+			return A2(_elm_lang$html$Html$map, _user$project$Messages$UpdateTacos, _user$project$Tacos_View$modal);
+		case 'WorldModel':
+			return A2(_elm_lang$html$Html$map, _user$project$Messages$UpdateDestroyWorld, _user$project$DestroyWorld_View$modal);
+		default:
+			return A2(_elm_lang$html$Html$map, _user$project$Messages$UpdateDestroyCountry, _user$project$DestroyCountries_View$modal);
+	}
+};
+var _user$project$Views_Modal$view = function (model) {
+	var _p1 = model.modal;
+	if (_p1.ctor === 'Nothing') {
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$style(
+					{
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'display', _1: 'none'},
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			},
+			{ctor: '[]'});
+	} else {
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _user$project$Styles_Main$maskStyle,
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$span,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Events$onFocus(_user$project$Messages$ResetModalFocus),
+						_1: {
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$tabindex(0),
+							_1: {ctor: '[]'}
+						}
+					},
+					{ctor: '[]'}),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$div,
+						{
+							ctor: '::',
+							_0: _user$project$Styles_Main$modalStyle,
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$id('modal-window'),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$tabindex(-1),
+									_1: {ctor: '[]'}
+								}
+							}
+						},
+						{
+							ctor: '::',
+							_0: _user$project$Views_Modal$modalContent(_p1._0),
+							_1: {ctor: '[]'}
+						}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$span,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Events$onFocus(_user$project$Messages$ResetModalFocus),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$tabindex(0),
+									_1: {ctor: '[]'}
+								}
+							},
+							{ctor: '[]'}),
+						_1: {ctor: '[]'}
+					}
+				}
+			});
+	}
+};

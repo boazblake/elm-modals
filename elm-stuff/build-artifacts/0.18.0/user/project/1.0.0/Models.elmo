@@ -1,0 +1,14 @@
+var _user$project$Models$model = {isWorldDestroyed: false, tacos: _user$project$Tacos_Models$model, destroyWorld: _user$project$DestroyWorld_Models$model, destroyCountries: _user$project$DestroyCountries_Models$model, modal: _elm_lang$core$Maybe$Nothing};
+var _user$project$Models$Model = F5(
+	function (a, b, c, d, e) {
+		return {isWorldDestroyed: a, tacos: b, destroyWorld: c, destroyCountries: d, modal: e};
+	});
+var _user$project$Models$DestroyCountries = function (a) {
+	return {ctor: 'DestroyCountries', _0: a};
+};
+var _user$project$Models$WorldModel = function (a) {
+	return {ctor: 'WorldModel', _0: a};
+};
+var _user$project$Models$TacoModal = function (a) {
+	return {ctor: 'TacoModal', _0: a};
+};

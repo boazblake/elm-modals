@@ -1,0 +1,7 @@
+var _user$project$Tacos_Messages$CancelOrder = {ctor: 'CancelOrder'};
+var _user$project$Tacos_Messages$PlaceOrder = {ctor: 'PlaceOrder'};
+var _user$project$Tacos_Messages$UpdateOrder = function (a) {
+	return {ctor: 'UpdateOrder', _0: a};
+};
+var _user$project$Tacos_Messages$StartTacoOrder = {ctor: 'StartTacoOrder'};
+var _user$project$Tacos_Messages$NoOp = {ctor: 'NoOp'};

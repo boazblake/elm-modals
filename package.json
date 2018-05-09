@@ -1,0 +1,14 @@
+{
+	"name": "elm_modals",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"elm:install": "elm package install",
+		"elm:make": "elm make ./src/Main.elm --output=./dist/app.html;"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {}
+}

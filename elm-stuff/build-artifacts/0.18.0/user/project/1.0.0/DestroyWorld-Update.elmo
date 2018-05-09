@@ -1,0 +1,25 @@
+var _user$project$DestroyWorld_Update$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		switch (_p0.ctor) {
+			case 'NoOp':
+				return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+			case 'ToDestroyWorld':
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{
+						modal: _elm_lang$core$Maybe$Just(_user$project$DestroyWorld_Models$modal)
+					});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+			case 'DestroyWorld':
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{modal: _elm_lang$core$Maybe$Nothing, isWorldDestroyed: true});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+			default:
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{modal: _elm_lang$core$Maybe$Nothing, isWorldDestroyed: false});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+		}
+	});

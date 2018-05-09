@@ -1,0 +1,46 @@
+var _user$project$Tacos_Update$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		switch (_p0.ctor) {
+			case 'NoOp':
+				return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+			case 'StartTacoOrder':
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{
+						modal: _elm_lang$core$Maybe$Just(_user$project$Tacos_Models$modal)
+					});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+			case 'UpdateOrder':
+				var newModal = A2(
+					_elm_lang$core$Maybe$map,
+					function (x) {
+						return _elm_lang$core$Native_Utils.update(
+							x,
+							{currentOrder: _p0._0});
+					},
+					model.modal);
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{modal: newModal});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+			case 'PlaceOrder':
+				var orderTotal = function () {
+					var _p1 = model.modal;
+					if (_p1.ctor === 'Just') {
+						return _p1._0.currentOrder + model.totalOrdered;
+					} else {
+						return model.totalOrdered;
+					}
+				}();
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{totalOrdered: orderTotal, modal: _elm_lang$core$Maybe$Nothing});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+			default:
+				var newModel = _elm_lang$core$Native_Utils.update(
+					model,
+					{modal: _elm_lang$core$Maybe$Nothing});
+				return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
+		}
+	});
